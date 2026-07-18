@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro Explorer</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <meta name="author" content="Nefi S. Yendes">
+    <meta name="description" content="An informational page about Rio de Janeiro featuring local data and weather.">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rio de Janeiro</h1>
+    </header>
+
+    <main>
+        <div class="herocontainer">
+            <picture class="bgpicture">
+                <source media="(min-width: 800px)" srcset="images/rio-de-janeiro-city-view.jpg">
+                <img src="images/rio-de-janeiro-city-small.jpg" alt="Rio de Janeiro- City view" class="mainimage">
+            </picture>
+            
+            <section class="card datacard">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Area:</span> <span class="value">1,200 sq km</span></li>
+                    <li><span class="label">Population:</span> <span class="value">6,748,000</span></li>
+                    <li><span class="label">Capital:</span> <span class="value">Brasília (Federal Capital)</span></li>
+                    <li><span class="label">Languages:</span> <span class="value">Portuguese</span></li>
+                    <li><span class="label">Currency:</span> <span class="value">Brazilian Real (BRL)</span></li>
+                    <li><span class="label">Time Zone:</span> <span class="value">UTC-3</span></li>
+                    <li><span class="label">Calling Code:</span> <span class="value">+55 21</span></li>
+                    <li><span class="label">Internet TLD:</span> <span class="value">.br</span></li>
+                </ul>
+            </section>
+
+            <section class="card weathercard">
+                <div class="weatherheader">
+                    <h2>Weather</h2>
+                    <img src="images/weather.png" alt="Sunny with few clouds icon" class="weathericon">
+                </div>
+                <ul>
+                    <li><span class="label">Temperature:</span> <span class="value" id="temperature">26</span> °C</li>
+                    <li><span class="label">Conditions:</span> <span class="value">Mostly Sunny</span></li>
+                    <li><span class="label">Wind:</span> <span class="value" id="windspeed">14</span> km/h</li>
+                    <li><span class="label">Wind Chill:</span> <span class="value" id="windchill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🐉 Nefi S. Yendes 🐉 Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

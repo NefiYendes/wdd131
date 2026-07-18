@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vw;
+
+}
+header{
+    background-color: #4a148c;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: .5rem;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❌";
+}
+#navigation {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    background-color: #4a148c;
+    width: 100%;
+}
+#navigation.open {
+    display: flex;
+}
+#navigation li {
+    text-align: center;
+}
+#navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+#navigation a:hover {
+    background-color: #6a1b9a;
+}
+main{
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.8rem;
+    color: black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+figure {
+    background-color: white;
+    text-align: center;
+}
+figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: .8rem;
+    color:  #4a148c;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(15, 71, 134);
+    color: white;
+    padding: 15px;
+    line-height: 1.6;
+}

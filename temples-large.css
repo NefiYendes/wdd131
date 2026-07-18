@@ -1,0 +1,126 @@
+@media screen and (min-width:620px) {
+    #menu {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#4a148c;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+    }
+
+    #navigation a {
+        padding: .8rem 1.2rem;
+        font-size: 1rem;
+    }
+    main {
+        max-width: 1000px;
+        padding: 2rem;
+    }
+    h1{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid-container { 
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+    figcaption {
+        font: .95rem;
+    }
+}
+@media screen and (min-width:840px){
+    #menu {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#4a148c;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+    }
+
+    #navigation a {
+        padding: .8rem 1.2rem;
+        font-size: 1rem;
+    }
+    main {
+        max-width: 1000px;
+        padding: 2rem;
+    }
+    h1{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid-container { 
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+    figcaption {
+        font: .95rem;
+    }
+}
