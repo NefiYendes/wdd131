@@ -189,7 +189,3 @@ footer {
         justify-content: space-around;
     }
 }
-footer{
-    background-color: var(--primary-color);
-    color: var(--card-bg);
-}
