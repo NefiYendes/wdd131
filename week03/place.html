@@ -38,7 +38,11 @@
             <section class="card weathercard">
                 <div class="weatherheader">
                     <h2>Weather</h2>
-                    <img src="images/weather.png" alt="Sunny with few clouds icon" class="weathericon">
+                    <svg class="weathericon" viewBox="0 0 64 64" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="24" r="12" fill="#fedf00" stroke="#333333" stroke-width="2"/>
+                        <path d="M46 44a8 8 0 0 0-6-15 10 10 0 0 0-19 2 7 7 0 0 0-5 7 7 7 0 0 0 7 7h23a6 6 0 0 0 0-11z" fill="#ffffff" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M20 50l-2 4M28 50l-2 4M36 50l-2 4M44 50l-2 4" stroke="#cccccc" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                 </div>
                 <ul>
                     <li><span class="label">Temperature:</span> <span class="value" id="temperature">26</span> °C</li>
