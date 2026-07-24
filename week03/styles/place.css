@@ -30,12 +30,6 @@ header h1 {
     text-shadow: 1px 1px 2px var(--shadow-color);
 }
 
-header h1::after {
-    content: " 🇧🇷";
-    font-size: 1.4rem;
-    vertical-align: middle;
-}
-
 main {
     padding: 0;
     background-color: var(--card-bg);
@@ -121,6 +115,12 @@ footer {
 }
 
 @media (min-width: 800px) {
+    header h1::after {
+        content: " 🇧🇷";
+        font-size: 1.4rem;
+        vertical-align: middle;
+    }
+
     main {
         max-width: 100%;
     }
@@ -141,12 +141,12 @@ footer {
     }
 
     .mainimage {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    will-change: transform;
-}
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        will-change: transform;
+    }
 
     .datacard {
         grid-column: 1;
