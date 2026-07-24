@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #009739;
+    --primary-color: #015722;
     --secondary-color: #fedf00;
     --bg-color: #f4faf4;
     --card-bg: #ffffff;
@@ -141,9 +141,12 @@ footer {
     }
 
     .mainimage {
-        height: 100%;
-        width: 100%;
-    }
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    will-change: transform;
+}
 
     .datacard {
         grid-column: 1;
