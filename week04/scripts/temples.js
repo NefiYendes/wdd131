@@ -91,7 +91,7 @@ function getYear(dedicatedString) {
 function displayTemples(filteredTemples) {
     box.innerHTML = "";
 
-    filteredTemples.forEach((temple) => {
+    filteredTemples.forEach((temple, index) => {
         const section = document.createElement('section');
         const h3 = document.createElement('h3');
         const location = document.createElement('p');
@@ -103,9 +103,17 @@ function displayTemples(filteredTemples) {
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Size:</span> ${temple.area.toLocaleString()} sq ft`;
+        
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", temple.templeName);
-        img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "400");
+        img.setAttribute("height", "250");
+
+        if (index === 0) {
+            img.setAttribute("fetchpriority", "high");
+        } else {
+            img.setAttribute("loading", "lazy");
+        }
 
         section.classList.add('card');
         section.appendChild(h3);
