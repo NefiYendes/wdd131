@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vw;
-
+    min-height: 100vh;
 }
-header{
+
+header {
     background-color: #4a148c;
     position: relative;
 }
@@ -34,14 +35,17 @@ header{
     font-size: 2rem;
     color: white;
     cursor: pointer;
-    padding: .5rem;
+    padding: 0.5rem;
 }
+
 #menu::before {
     content: "☰";
 }
+
 #menu.open::before {
     content: "❌";
 }
+
 #navigation {
     display: none;
     list-style: none;
@@ -49,12 +53,15 @@ header{
     background-color: #4a148c;
     width: 100%;
 }
+
 #navigation.open {
     display: flex;
 }
+
 #navigation li {
     text-align: center;
 }
+
 #navigation a {
     display: block;
     padding: 1rem;
@@ -63,10 +70,12 @@ header{
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
+
 #navigation a:hover {
     background-color: #6a1b9a;
 }
-main{
+
+main {
     flex: 1;
     max-width: 800px;
     margin: 0 auto;
@@ -80,30 +89,36 @@ h1 {
     font-size: 1.8rem;
     color: black;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    align-items: stretch;
 }
-.card{
-    gap: 2px;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    margin: 10px
+    margin: 0;
+    height: 100%;
+    background-color: #ffffff;
 }
-.card img{
-    justify-self: center;
+
+.card img {
+    margin-top: auto;
     max-width: 100%;
     height: auto;
     display: block;
+    align-self: center;
 }
-
-
 
 footer {
     text-align: center;
-    background-color: rgb(15, 71, 134);
+    background-color: #0f4786;
     color: white;
     padding: 15px;
     line-height: 1.6;
 }
-
