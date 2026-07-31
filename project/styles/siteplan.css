@@ -199,6 +199,22 @@ main {
     width: 100%;
 }
 
+.swatch-primary {
+    background-color: #2d5a27;
+}
+
+.swatch-accent {
+    background-color: #e07a5f;
+}
+
+.swatch-bg {
+    background-color: #f4f1de;
+}
+
+.swatch-text {
+    background-color: #3d405b;
+}
+
 .swatch-info {
     padding: 0.6rem 0.8rem;
     font-size: 0.9rem;
