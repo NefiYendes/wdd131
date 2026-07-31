@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan: Nature & Hiking Trail Planner</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                <circle cx="18" cy="6" r="2"/>
+            </svg>
+            <div>
+                <h1>TrailFinder</h1>
+                <p class="tagline">Nature & Hiking Trail Planner</p>
+            </div>
+        </div>
+        <div class="header-badge">WDD 131 Site Plan</div>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Site Name & Logo</h2>
+            <div class="site-branding">
+                <div class="logo-preview">
+                    <svg class="logo-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2d5a27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                        <circle cx="18" cy="6" r="2"/>
+                    </svg>
+                    <span class="logo-text">TrailFinder</span>
+                </div>
+                <div class="branding-details">
+                    <p><strong>Site Name:</strong> TrailFinder (Nature & Hiking Trail Planner)</p>
+                    <p><strong>Optional Domain Availability:</strong> <code>trailfinder-planner.org</code></p>
+                    <p><strong>Reason for Name:</strong> The name "TrailFinder" is concise, memorable, and directly communicates the site's primary utility—helping outdoor enthusiasts discover, filter, and plan hiking routes suited to their skill level.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Site Purpose</h2>
+            <p>The primary purpose of TrailFinder is to serve as an interactive outdoor guide for local hiking trails and nature parks. The website provides detailed route specifications (difficulty, distance, and estimated duration), high-resolution imagery, and dynamic search tools.</p>
+            <p>Key services and features provided to visitors include:</p>
+            <ul>
+                <li>An interactive visual catalog of curated hiking routes.</li>
+                <li>Dynamic JavaScript filtering by difficulty level (Easy, Moderate, Hard).</li>
+                <li>Personalized trail bookmarking powered by browser <code>localStorage</code>.</li>
+                <li>A signup form for guided group hikes and information requests.</li>
+                <li>A dedicated references page citing image and data sources.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Target Audience Scenarios</h2>
+            <div class="scenarios-grid">
+                <div class="scenario-box">
+                    <span class="scenario-number">Scenario 1</span>
+                    <h3>Beginner Hiker</h3>
+                    <p class="question">"I want to take my family on a weekend walk, but we need an easy trail with minimal elevation gain that takes under 2 hours. How can I quickly find matching routes and save them for later?"</p>
+                    <p class="answer"><strong>Site Solution:</strong> The user can use the difficulty filter controls on the catalog page to filter for "Easy" routes, inspect distance and estimated times, and click "Save to Favorites" to store choices locally in their browser.</p>
+                </div>
+                <div class="scenario-box">
+                    <span class="scenario-number">Scenario 2</span>
+                    <h3>Experienced Backpacker / Group Trail Seeker</h3>
+                    <p class="question">"I am looking for a challenging mountain route with scenic views and want to sign up for an upcoming guided weekend expedition. Where can I register?"</p>
+                    <p class="answer"><strong>Site Solution:</strong> The user filters for "Hard" trails, reads route specifics, and fills out the integrated guided hike registration form to lock in a spot on the next group trek.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Color Palette Schema</h2>
+            <p>The color palette is chosen to evoke a natural, outdoor aesthetic—using forest greens, warm accents, and earthy neutrals.</p>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="swatch-color" style="background-color: #2d5a27;"></div>
+                    <div class="swatch-info">
+                        <strong>Primary Green</strong>
+                        <code>#2d5a27</code>
+                        <span>Header, primary buttons, subheadings</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch-color" style="background-color: #e07a5f;"></div>
+                    <div class="swatch-info">
+                        <strong>Accent Terracotta</strong>
+                        <code>#e07a5f</code>
+                        <span>Badges, key highlights, hover states</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch-color" style="background-color: #f4f1de;"></div>
+                    <div class="swatch-info">
+                        <strong>Background Sand</strong>
+                        <code>#f4f1de</code>
+                        <span>Body background, soft container fills</span>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch-color" style="background-color: #3d405b;"></div>
+                    <div class="swatch-info">
+                        <strong>Text Charcoal</strong>
+                        <code>#3d405b</code>
+                        <span>Primary body text, card borders</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Typography</h2>
+            <div class="typography-demo">
+                <div class="font-specimen">
+                    <h3>Heading Font: Montserrat (Sans-Serif)</h3>
+                    <p class="font-sample montserrat-sample">The Quick Brown Fox Jumps Over The Lazy Dog - 1234567890</p>
+                    <p><strong>Usage:</strong> Page titles (<code>h1</code>), section headings (<code>h2</code>), and subheadings (<code>h3</code>). Gives a clean, modern, and sturdy outdoor structural look.</p>
+                </div>
+                <div class="font-specimen">
+                    <h3>Body Font: Open Sans (Sans-Serif)</h3>
+                    <p class="font-sample open-sans-sample">The quick brown fox jumps over the lazy dog. Hiking requires proper planning and safety gear.</p>
+                    <p><strong>Usage:</strong> Paragraph body text, list items, input field text, and buttons. Chosen for high legibility across mobile and desktop screens.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Wireframes (Home Page Layout)</h2>
+            <p>Below are structural wireframe diagrams illustrating the responsive arrangement for mobile screens and desktop displays.</p>
+
+            <div class="wireframes-grid">
+                <div class="wireframe-container">
+                    <h3>Mobile View (370px+)</h3>
+                    <div class="wireframe-box mobile-wireframe">
+                        <div class="wf-header">[Header: Logo & Nav Toggle]</div>
+                        <div class="wf-hero">[Hero Banner: Title & CTA Button]</div>
+                        <div class="wf-filter">[Difficulty Filters (Dropdown/Buttons)]</div>
+                        <div class="wf-card-stack">
+                            <div class="wf-card">[Trail Card 1]</div>
+                            <div class="wf-card">[Trail Card 2]</div>
+                            <div class="wf-card">[Trail Card 3]</div>
+                        </div>
+                        <div class="wf-form">[Guided Hike Sign-Up Form]</div>
+                        <div class="wf-footer">[Footer: Social & Copyright]</div>
+                    </div>
+                </div>
+
+                <div class="wireframe-container">
+                    <h3>Desktop View (1024px+)</h3>
+                    <div class="wireframe-box desktop-wireframe">
+                        <div class="wf-header">[Header: Logo / Nav Menu Links]</div>
+                        <div class="wf-hero">[Hero Banner: Full Width Image, Headline & CTA]</div>
+                        <div class="wf-main-layout">
+                            <div class="wf-sidebar">[Sidebar Filters & LocalStorage Favorites]</div>
+                            <div class="wf-content-grid">
+                                <div class="wf-card">[Trail Card 1]</div>
+                                <div class="wf-card">[Trail Card 2]</div>
+                                <div class="wf-card">[Trail Card 3]</div>
+                                <div class="wf-card">[Trail Card 4]</div>
+                            </div>
+                        </div>
+                        <div class="wf-form">[Guided Hike Sign-Up Form]</div>
+                        <div class="wf-footer">[Footer Links & Copyright]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Interactive Plan Feature Preview</h2>
+            <p>Try out this simple interactivity test powering local storage state verification for your site plan:</p>
+            <div class="interactive-demo">
+                <button id="plan-status-btn" class="btn">Check Saved Plan State</button>
+                <p id="status-output">Status: Click the button to read plan preferences stored in localStorage.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> TrailFinder Site Plan | Created for WDD 131</p>
+    </footer>
+
+</body>
+</html>
