@@ -133,7 +133,7 @@ input[type="checkbox"] {
 
 .stars label {
     font-size: 2rem;
-    color: #d1d5db;
+    color: #000000;
     cursor: pointer;
     transition: color 0.2s ease;
 }
