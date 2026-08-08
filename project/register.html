@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for upcoming guided hikes and group expeditions with experienced trail leaders.">
+    <title>Guided Hikes Registration | TrailFinder</title>
+    <meta name="author" content="Nefi S. Yendes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                <circle cx="18" cy="6" r="2"/>
+            </svg>
+            <div>
+                <h1>TrailFinder</h1>
+                <p class="tagline">Nature and Hiking Trail Planner</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="register.html" class="active">Guided Hikes</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <section class="card">
+            <h2>Register for a Guided Hike</h2>
+            <p>Join our certified guides for structured group treks. Fill out the form below to reserve your slot.</p>
+            
+            <form id="hike-form" action="thanks.html" method="get">
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="555-123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="selected-trail">Select Trail Expedition *</label>
+                    <select id="selected-trail" name="selected-trail" required>
+                        <option value="" disabled selected>Choose a route...</option>
+                        <option value="Pine Crest Loop">Pine Crest Loop (Easy)</option>
+                        <option value="Whispering River Trail">Whispering River Trail (Moderate)</option>
+                        <option value="Eagle Rock Summit">Eagle Rock Summit (Hard)</option>
+                        <option value="Cedar Canyon Way">Cedar Canyon Way (Moderate)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience Level *</label>
+                    <select id="experience" name="experience" required>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Special Requests or Medical Notes</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Mention any dietary needs or allergies..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> TrailFinder | Created by Nefi S. Yendes - WDD 131</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">View Image and Data References</a></p>
+    </footer>
+
+</body>
+</html>
